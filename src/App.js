@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React ,{useState}from 'react';
+import Formulario from './Formulario';
+import Resultados from './Resultados';
 
 function App() {
+  const [añosRestantes,setData]=useState();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="contenedor">
+      <h1>¿Cuánto tiempo tienes?</h1>
+      <div >
+        <Formulario setData={setData} />
+        <Resultados añosRestantes={añosRestantes}/>
+      </div>
+      <div className="disclaimer">
+      Disclaimer<br/>
+      La app asume que todos los años tienen 365 días 5 horas y 48 min, que uno trabaja 48 h a la semana y que se demora en comer 30 minutos.
+      </div>
     </div>
   );
 }
