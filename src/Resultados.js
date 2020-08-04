@@ -1,4 +1,4 @@
-import React ,{useState, useRef}from 'react';
+import React from 'react';
 
 function calcularSueño(cantidad){
     return (cantidad*0.33355403378995).toFixed(2);
@@ -22,7 +22,7 @@ function Resultados({añosRestantes}){
             <p>{calcularSueño(añosRestantes)} años de sueño</p>
             <p>{calcularAlimentacion(añosRestantes)} años de alimentación</p>
             <p>{calcularTrabajo(añosRestantes)} años de trabajo</p>
-            <p>Te quedan {calcularTiempoLibre(añosRestantes)} años libres</p>
+        <p>Te quedan {calcularTiempoLibre(añosRestantes)} años libres</p>
         </div>
         )
     else return null
