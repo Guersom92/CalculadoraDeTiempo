@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/CalculadoraDeTiempo/static/css/main.88b4da1a.chunk.css",
+    "main.js": "/CalculadoraDeTiempo/static/js/main.9e0b1ec4.chunk.js",
+    "main.js.map": "/CalculadoraDeTiempo/static/js/main.9e0b1ec4.chunk.js.map",
+    "runtime-main.js": "/CalculadoraDeTiempo/static/js/runtime-main.c373e3c6.js",
+    "runtime-main.js.map": "/CalculadoraDeTiempo/static/js/runtime-main.c373e3c6.js.map",
+    "static/js/2.d21c4ab1.chunk.js": "/CalculadoraDeTiempo/static/js/2.d21c4ab1.chunk.js",
+    "static/js/2.d21c4ab1.chunk.js.map": "/CalculadoraDeTiempo/static/js/2.d21c4ab1.chunk.js.map",
+    "index.html": "/CalculadoraDeTiempo/index.html",
+    "precache-manifest.f70be03b46d0e538e8ac373f3ac16f37.js": "/CalculadoraDeTiempo/precache-manifest.f70be03b46d0e538e8ac373f3ac16f37.js",
+    "service-worker.js": "/CalculadoraDeTiempo/service-worker.js",
+    "static/css/main.88b4da1a.chunk.css.map": "/CalculadoraDeTiempo/static/css/main.88b4da1a.chunk.css.map",
+    "static/js/2.d21c4ab1.chunk.js.LICENSE.txt": "/CalculadoraDeTiempo/static/js/2.d21c4ab1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c373e3c6.js",
+    "static/js/2.d21c4ab1.chunk.js",
+    "static/css/main.88b4da1a.chunk.css",
+    "static/js/main.9e0b1ec4.chunk.js"
+  ]
+}
