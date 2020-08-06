@@ -32,7 +32,10 @@ function Formulario({setData}){
         <form onSubmit={submitFunction}>
             <input type="number" min="1" max="120" ref={edadRef} placeholder="Ingresa tu edad"/>
             {cantidadPosible?<p className="error">Edad no puede ser menor o igual a la esperanza</p>:null}
-            <input type="number" min="1" max="120" ref={esperanzaRef} placeholder="Esperanza de vida"/>
+            <div className="esperanza-container">
+            <input type="number" min="1" max="120" ref={esperanzaRef} placeholder="Esperanza de vida"/> 
+            <button type="button" className="info">i</button>
+            </div>
             {vacio?<p className="error">Debes llenar las 2 casillas</p>:null}
             <button>Calcular</button>
         </form>
