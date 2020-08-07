@@ -1,6 +1,6 @@
 import React ,{useState,useRef,useEffect}from 'react';
 
-function Formulario({setData}){
+function Formulario({setData,setClase}){
     const edadRef=useRef();
     const esperanzaRef=useRef();
 
@@ -34,7 +34,7 @@ function Formulario({setData}){
             {cantidadPosible?<p className="error">Edad no puede ser menor o igual a la esperanza</p>:null}
             <div className="esperanza-container">
             <input type="number" min="1" max="120" ref={esperanzaRef} placeholder="Esperanza de vida"/> 
-            <button type="button" className="info">i</button>
+            <button type="button" onClick={()=>setClase("show")} className="button-info">i</button>
             </div>
             {vacio?<p className="error">Debes llenar las 2 casillas</p>:null}
             <button>Calcular</button>
