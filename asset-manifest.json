@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/CalculadoraDeTiempo/static/css/main.23b2c2af.chunk.css",
-    "main.js": "/CalculadoraDeTiempo/static/js/main.5549c8c2.chunk.js",
-    "main.js.map": "/CalculadoraDeTiempo/static/js/main.5549c8c2.chunk.js.map",
+    "main.css": "/CalculadoraDeTiempo/static/css/main.719c23cd.chunk.css",
+    "main.js": "/CalculadoraDeTiempo/static/js/main.4ed5c892.chunk.js",
+    "main.js.map": "/CalculadoraDeTiempo/static/js/main.4ed5c892.chunk.js.map",
     "runtime-main.js": "/CalculadoraDeTiempo/static/js/runtime-main.c373e3c6.js",
     "runtime-main.js.map": "/CalculadoraDeTiempo/static/js/runtime-main.c373e3c6.js.map",
     "static/js/2.d21c4ab1.chunk.js": "/CalculadoraDeTiempo/static/js/2.d21c4ab1.chunk.js",
     "static/js/2.d21c4ab1.chunk.js.map": "/CalculadoraDeTiempo/static/js/2.d21c4ab1.chunk.js.map",
     "index.html": "/CalculadoraDeTiempo/index.html",
-    "precache-manifest.527c58b8cd872f67962f55e802352787.js": "/CalculadoraDeTiempo/precache-manifest.527c58b8cd872f67962f55e802352787.js",
+    "precache-manifest.c761ba0ba0b490077365e8ee78e9aa9e.js": "/CalculadoraDeTiempo/precache-manifest.c761ba0ba0b490077365e8ee78e9aa9e.js",
     "service-worker.js": "/CalculadoraDeTiempo/service-worker.js",
-    "static/css/main.23b2c2af.chunk.css.map": "/CalculadoraDeTiempo/static/css/main.23b2c2af.chunk.css.map",
+    "static/css/main.719c23cd.chunk.css.map": "/CalculadoraDeTiempo/static/css/main.719c23cd.chunk.css.map",
     "static/js/2.d21c4ab1.chunk.js.LICENSE.txt": "/CalculadoraDeTiempo/static/js/2.d21c4ab1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c373e3c6.js",
     "static/js/2.d21c4ab1.chunk.js",
-    "static/css/main.23b2c2af.chunk.css",
-    "static/js/main.5549c8c2.chunk.js"
+    "static/css/main.719c23cd.chunk.css",
+    "static/js/main.4ed5c892.chunk.js"
   ]
 }
