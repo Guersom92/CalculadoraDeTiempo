@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74cd6ec92d5ac4fa4a93632795ad23aa",
+    "revision": "9c6a7463edc2c6001bb7cf1208633af4",
     "url": "/CalculadoraDeTiempo/index.html"
   },
   {
-    "revision": "b4580ebbce9213f66265",
-    "url": "/CalculadoraDeTiempo/static/css/main.719c23cd.chunk.css"
+    "revision": "d2508cfc43f81efc4768",
+    "url": "/CalculadoraDeTiempo/static/css/main.bfad8416.chunk.css"
   },
   {
     "revision": "a83434c9b2c891bcec24",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CalculadoraDeTiempo/static/js/2.d21c4ab1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b4580ebbce9213f66265",
+    "revision": "d2508cfc43f81efc4768",
     "url": "/CalculadoraDeTiempo/static/js/main.4ed5c892.chunk.js"
   },
   {
