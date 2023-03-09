@@ -1,32 +1,28 @@
-import React from 'react';
+import React from "react";
 
-function calcularSueño(cantidad){
-    return (cantidad*0.33355403378995).toFixed(2);
+function calcularSemanas(cantidad) {
+  return (Math.floor((cantidad * 365) / 7));
 }
 
-function calcularAlimentacion(cantidad){
-    return (cantidad*0.062541381335616).toFixed(2);
-}
-function calcularTrabajo(cantidad){
-    return (cantidad*0.28590345753425).toFixed(2);
-}
-function calcularTiempoLibre(cantidad){
-   return (cantidad-(cantidad*0.33355403378995)-(cantidad*0.062541381335616)-(cantidad*0.28590345753425)).toFixed(2);
+function Resultados({ añosRestantes, añosVividos }) {
+  const semanasRestantes = [];
+  const semanasVividas = [];
+  for (let index = 0; index < (añosVividos * 365) / 7; index++) {
+    semanasVividas.push(<span class="dot"></span>);
+  }
+  for (let index = 0; index < (añosRestantes * 365) / 7; index++) {
+    semanasRestantes.push(<span class="dot"></span>);
+  }
+
+  if (añosRestantes)
+    return (
+      <div className="resultados">
+        <p>Te quedan {calcularSemanas(añosRestantes)} semanas</p>
+        <div className="diasVividos"> <div className="nubeVividos">{calcularSemanas(añosVividos)} Semanas vividas</div> {semanasVividas}</div>
+        <div className="diasRestantes"> <div className="nubeRestantes">{calcularSemanas(añosRestantes)} Semanas Restantes</div> {semanasRestantes}</div>
+      </div>
+    );
+  else return null;
 }
 
-function Resultados({añosRestantes}){
-
-    if(añosRestantes)return(
-        <div>
-            <p>Te quedan {añosRestantes} años</p>
-            <p>{calcularSueño(añosRestantes)} años de sueño</p>
-            <p>{calcularAlimentacion(añosRestantes)} años de alimentación</p>
-            <p>{calcularTrabajo(añosRestantes)} años de trabajo</p>
-        <p>Te quedan {calcularTiempoLibre(añosRestantes)} años libres</p>
-        </div>
-        )
-    else return null
-    
-    }
-    
 export default Resultados;

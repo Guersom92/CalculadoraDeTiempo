@@ -1,6 +1,6 @@
-import React ,{useState,useRef,useEffect}from 'react';
+import React ,{useState,useRef}from 'react';
 
-function Formulario({setData,setClase}){
+function Formulario({setRestante,setVividos,setClase}){
     const edadRef=useRef();
     const esperanzaRef=useRef();
 
@@ -13,23 +13,24 @@ function Formulario({setData,setClase}){
         let esperanzaMenor=edadRef.current.valueAsNumber>=esperanzaRef.current.valueAsNumber;
         if(esVacio){
             cambiarVacio(true);
-            setData(null);
+            setRestante(null);
         }else cambiarVacio(false)
         
         if(esperanzaMenor){
             cambiarCantidadPosible(true);
-            setData(null);
+            setRestante(null);
         }else cambiarCantidadPosible(false);
 
         if(esVacio||esperanzaMenor)return;
         let añosRestantes=esperanzaRef.current.value-edadRef.current.value;
-        setData(añosRestantes);
+        setRestante(añosRestantes);
+        setVividos(edadRef.current.value);
         edadRef.current.value=null;
         esperanzaRef.current.value=null;
     }
 
     return(
-        <form onSubmit={submitFunction}>
+        <form className="inputs"onSubmit={submitFunction}>
             <input type="number" min="1" max="120" ref={edadRef} placeholder="Ingresa tu edad"/>
             {cantidadPosible?<p className="error">Edad no puede ser menor o igual a la esperanza</p>:null}
             <div className="esperanza-container">
